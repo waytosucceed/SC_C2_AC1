@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch-AC1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./logo/Logo.png" width="5%" class="img-responsive logo1" />
+
+      <img src="./logo/header.png" class="img-responsive logo2" />
+      <button class="toggle-sidenav" onclick="toggleSidenav()">☰</button>
+      <!-- Toggle Button -->
+    </div>
+
+    <div class="container">
+      <!-- Left Side Navigation -->
+      <div class="sidenav">
+        <button onclick="showContent('coordinates')">
+         COORDINATE SYSTEM
+      </button>
+        <button onclick="showContent('changing-costume')">
+          CHANGING THE SIZE OF SPRITES
+        </button>
+        <button onclick="showContent('repeat')">
+            MOVING SPRITES
+        </button>
+    </div>
+    
+
+      <!-- Right Side Content -->
+      <div class="content">
+     <!-- SPRITE -->
+     <div id="coordinates" class="content-section" style="display: none;">
+      <h2>COORDINATE SYSTEM</h2><br>
+      <div style="text-align: center;">
+        <img src="./assets/images/1.png" alt="" width="60%">
+        <p>x,y coordinates are used to denote the position of the sprite.
+        </p>
+      </div>
+      
+      
+          <p>
+              
+              - <b>Move Left and Right:</b> If you want the sprite to move left/right change x. <br><br>
+              - <b>Move Up and Down:</b> If you want the sprite to move up/down, change y.
+          </p>
+          
+      
+      <div style="text-align: center;">
+        <img src="./assets/images/2.png" alt="" width="60%">
+      </div>
+  </div>
+
+<!-- CHANGING COSTUME OF THE SPRITE -->
+<div id="changing-costume" class="content-section" style="display: none;">
+    <h2 style="color: #1230ae; font-weight: bold;">CHANGING THE SIZE OF SPRITES</h2>
+    
+    <p style="font-size: 1.4rem;">
+      You can change the size of the sprite by changing the number here: 
+        <br><br>
+        <img src="./assets/images/3.png" alt="image-scratch" width="80%" />
+
+    </p>
+</div>
+
+<!-- REPEAT -->
+<div id="repeat" class="content-section" style="display: none;">
+  <h2 style="color: #1230ae; font-weight: bold;">MOVING SPRITES</h2>
+  
+  <p style="font-size: 1.4rem;">
+    Motion blocks allow us to move sprites in different directions (up, down, left, right) or make them perform actions like turning or gliding.
+  </p>
+  <h3>Demonstration of Simple Motion</h3>
+  <p style="font-size: 1.4rem;">
+    I am going to make the sprite move around the screen using simple commands. Watch how we can control the sprite’s movement with just a few blocks!
+    <br><br>Let’s begin with the <b>move</b> block.
+  </p>
+  <div style="display: flex;">
+    <div style="width: 50%;text-align: center;">
+      <img src="./assets/images/4.png" alt="image-scratch" width="40%" />
+    </div>
+       <div style="width:50%">
+        <p>The move block helps the sprite move some steps in the current direction.</p>
+       </div>
+  </div>
+  <p>Let’s try to move the sprite when you click on it.</p>
+  <img src="./assets/images/5.png" alt="" width="25%"><br>
+  Now, let’s take control of the sprite’s position in a more specific way using change x by and change y by blocks. These blocks allow you to move the sprite horizontally or vertically.
+  <div>
+    <table>
+      <tr>
+        <td style="text-align: center;"><img src="./assets/images/6.png" alt="" width="40%"></td>
+        <td>It changes the sprite’s x position by a certain amount.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><img src="./assets/images/7.png" alt="" width="40%"></td>
+        <td>It changes the sprite’s y position by a certain amount.</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <img src="./assets/images/8.png" alt="" width="35%"><br>
+   If you want the sprite to go left you need to reduce the x coordinate hence the minus sign.
+   <br>Now, let’s try to move it toward the right.
+   <br>
+   <img src="./assets/images/9.png" alt="" width="35%">
+   <br>
+   Now let’s move it up and down.
+   <br>
+   <img src="./assets/images/10.png" alt="" width="60%">
+   <br><br>
+   If you want the sprite to move at a specific position use go to command. Let’s say when you press space key, you want the sprite to move at a center.
+   <br>
+   <div>
+    <table>
+      <tr>
+        <td style="text-align: center;"><img src="./assets/images/11.png" alt="" width="60%"></td>
+        <td>When the specified key is pressed, it runs the commands attached to it. You can pick the key by clicking from the drop-down menu.</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><img src="./assets/images/12.png" alt="" width="60%"></td>
+        <td>Moves the sprite to specified x,y position.</td>
+      </tr>
+    </table>
+  </div>
+  <img src="./assets/images/13.png" alt="" width="25%">
+  <br><br>
+  For the center, the coordinates will be 0,0
+  <br>
+  <div style="display: flex;">
+    <div style="width: 50%; text-align: center;">
+      <img src="./assets/images/14.png" alt="" width="60%">
+    </div>
+    <div style="width: 50%;">
+      <p>Moves the sprite to a random position.</p>
+    </div>
+</div>
+<br><br>
+Let’s move the sprite to a random position when you click on the green flag.
+<br>
+<img src="./assets/images/15.png" alt="" width="30%">
+<br><br>
+If you wish to see the x-y positions you can select these in the motion section:
+<br>
+<img src="./assets/images/16.png" alt="" width="40%">
+<br><br>You will see something like this:
+<br>
+<img src="./assets/images/17.png" alt="" width="60%">
+
+</div>
+
+
+        
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
